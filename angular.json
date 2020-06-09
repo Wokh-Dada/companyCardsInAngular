@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "companyCardsInAngular"
+    }
+  },
+  "defaultProject": "companyCardsInAngular",
+  "cli": {
+    "analytics": "eb463d96-c838-4022-ada3-7e27bd6063e8"
+  }
 }
