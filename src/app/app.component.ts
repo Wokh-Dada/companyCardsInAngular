@@ -176,7 +176,7 @@ export class AppComponent {
   /*IconsBlock*/
 
   getpreviewBackground() {
-    return this.companyStore.getpreviewBackground();
+    return this.companyStore.getpreviewBackground().previewBackgroundBlock;
   }
 
 
@@ -187,6 +187,13 @@ export class AppComponent {
     return console.log('clickOnIconsBlock:',  detail)
   }
 
+  /*IconsBlock*/
+
+  /*IconsBlock*/
+
+  getfooter() {
+    return this.companyStore.getfooter();
+  }
   /*IconsBlock*/
 
 }
