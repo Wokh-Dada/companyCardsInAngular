@@ -1,59 +1,62 @@
 <div class="topThreeBlocks">
-  <s-abdullakh-pre-header></s-abdullakh-pre-header>
+  <s-abdullakh-pre-header
+    *ngIf="popupComplited"
+    (close)="close()"
+  ></s-abdullakh-pre-header>
   <s-abdullakh-header
-  [headText]="getheadText()"
-  [headNav]="getheadNav()"
-  (clickOnHeader)="clickOnHeader($event)"
+    [headText]="getheadText()"
+    [headNav]="getheadNav()"
+    (clickOnHeader)="clickOnHeader($event)"
   ></s-abdullakh-header>
   <s-abdullakh-product-presentation
     [productPresentation]="getproductPresentation()"
     (clickOnProductPresentation)="clickOnProductPresentation($event)"
   ></s-abdullakh-product-presentation>
 </div>
-  <s-abdullakh-multi-currency-slaider></s-abdullakh-multi-currency-slaider>
-  <s-abdullakh-personal-security
-    [personalSecurityImg]="getppersonalSecurityImg()"
-    [personalSecurity]="getppersonalSecurity()"
-    (clickOnPersonalSecurity)="clickOnPersonalSecurity($event)"
-  ></s-abdullakh-personal-security>
-  <s-abdullakh-expense-management
-    [expenseManagementImg]="getexpenseManagementImg()"
-    [expenseManagement]="getexpenseManagement()"
-    (clickOnPersonalSecurity)="clickOnPersonalSecurity($event)"
-  ></s-abdullakh-expense-management>
-  <s-abdullakh-clause-match
+<s-abdullakh-multi-currency-slaider></s-abdullakh-multi-currency-slaider>
+<s-abdullakh-personal-security
+  [personalSecurityImg]="getppersonalSecurityImg()"
+  [personalSecurity]="getppersonalSecurity()"
+  (clickOnPersonalSecurity)="clickOnPersonalSecurity($event)"
+></s-abdullakh-personal-security>
+<s-abdullakh-expense-management
+  [expenseManagementImg]="getexpenseManagementImg()"
+  [expenseManagement]="getexpenseManagement()"
+  (clickOnPersonalSecurity)="clickOnPersonalSecurity($event)"
+></s-abdullakh-expense-management>
+<s-abdullakh-clause-match
   [clauseMatch]="getclauseMatch()"
   (clickOnClauseMatch)="clickOnClauseMatch($event)"
-  ></s-abdullakh-clause-match>
-  <s-abdullakh-security-control
-    [securityControlImg]="getsecurityControlImg()"
-    [securityControl]="getsecurityControl()"
-    (clickOnSecurityControl)="clickOnSecurityControl($event)"
-  ></s-abdullakh-security-control>
-  <s-abdullakh-card-design
-    [cardDesign]="getcardDesign()"
-    (clickOnCardDesign)="clickOnCardDesign($event)"
-  ></s-abdullakh-card-design>
-  <s-abdullakh-other-features
-    [otherFeatures]="getotherFeatures()"
-    [featuresblock]="getfeaturesblock()"
-    (clickOnOtherFeatures)="clickOnOtherFeatures($event)"
-  ></s-abdullakh-other-features>
-  <s-abdullakh-explore-features
-    [exploreFeatures]="getExploreFeature()"
-    (clickOnExploreFeature)="clickOnExploreFeature($event)"
-  ></s-abdullakh-explore-features>
-  <s-abdullakh-link-block
-    [linkBlock]="getlinkBlock()"
-    (clickOnLinkBlock)="clickOnLinkBlock($event)"
-  ></s-abdullakh-link-block>
-  <s-abdullakh-icons-block
-    [previewBackground]="getpreviewBackground()"
-    (clickOnIconsBlock)="clickOnIconsBlock($event)"
-  ></s-abdullakh-icons-block>
-  <s-abdullakh-footer
-    [footer]="getfooter()"
-  ></s-abdullakh-footer>
+></s-abdullakh-clause-match>
+<s-abdullakh-security-control
+  [securityControlImg]="getsecurityControlImg()"
+  [securityControl]="getsecurityControl()"
+  (clickOnSecurityControl)="clickOnSecurityControl($event)"
+></s-abdullakh-security-control>
+<s-abdullakh-card-design
+  [cardDesign]="getcardDesign()"
+  (clickOnCardDesign)="clickOnCardDesign($event)"
+></s-abdullakh-card-design>
+<s-abdullakh-other-features
+  [otherFeatures]="getotherFeatures()"
+  [featuresblock]="getfeaturesblock()"
+  (clickOnOtherFeatures)="clickOnOtherFeatures($event)"
+></s-abdullakh-other-features>
+<s-abdullakh-explore-features
+  [exploreFeatures]="getExploreFeature()"
+  (clickOnExploreFeature)="clickOnExploreFeature($event)"
+></s-abdullakh-explore-features>
+<s-abdullakh-link-block
+  [linkBlock]="getlinkBlock()"
+  (clickOnLinkBlock)="clickOnLinkBlock($event)"
+></s-abdullakh-link-block>
+<s-abdullakh-icons-block
+  [previewBackground]="getpreviewBackground()"
+  (clickOnIconsBlock)="clickOnIconsBlock($event)"
+></s-abdullakh-icons-block>
+<s-abdullakh-footer
+  [footer]="getfooter()"
+></s-abdullakh-footer>
 
 
 

@@ -10,6 +10,15 @@ export class AppComponent {
   constructor(private companyStore: ServiceStoreService) {
   }
 
+  popupComplited = true;
+
+  /**
+   * Закрытие cookie block
+   */
+  public close() {
+    this.popupComplited = false;
+  }
+
   /*header*/
 
   getheadText() {
@@ -126,6 +135,7 @@ export class AppComponent {
   public clickOnCardDesign({detail}) {
     return console.log('CardDesign:', detail)
   }
+
   /*CardDesign*/
 
 
@@ -142,7 +152,7 @@ export class AppComponent {
    * клик по элементам OtherFeatures
    */
   public clickOnOtherFeatures({detail}) {
-    return console.log('OtherFeatures:',  detail)
+    return console.log('OtherFeatures:', detail)
   }
 
   /*otherFeatures*/
@@ -156,8 +166,9 @@ export class AppComponent {
    * клик по элементам ExploreFeature
    */
   public clickOnExploreFeature({detail}) {
-    return console.log('ExploreFeature:',  detail)
+    return console.log('ExploreFeature:', detail)
   }
+
   /*ExploreFeature*/
 
   /*linkBlock*/
@@ -169,8 +180,9 @@ export class AppComponent {
    * клик по элементам LinkBlock
    */
   public clickOnLinkBlock({detail}) {
-    return console.log('LinkBlock:',  detail)
+    return console.log('LinkBlock:', detail)
   }
+
   /*linkBlock*/
 
   /*IconsBlock*/
@@ -184,7 +196,7 @@ export class AppComponent {
    * клик по элементам clickOnIconsBlock
    */
   public clickOnIconsBlock({detail}) {
-    return console.log('clickOnIconsBlock:',  detail)
+    return console.log('clickOnIconsBlock:', detail)
   }
 
   /*IconsBlock*/
@@ -194,6 +206,7 @@ export class AppComponent {
   getfooter() {
     return this.companyStore.getfooter();
   }
+
   /*IconsBlock*/
 
 }
